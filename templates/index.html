@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="wide wow-animation" lang="en">
+  <head> 
+    <!-- Site Title-->
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700%7CQuattrocento+Sans:400,700">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fonts.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+		<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <!-- Page-->
+    <div class="text-left page">
+      <!-- Page preloader-->
+      <div class="preloader">
+        <div class="preloader-body">
+          <div class="cssload-container">
+            <div class="cssload-speeding-wheel"></div>
+          </div>
+          <p>Loading...</p>
+        </div>
+      </div>
+      <!-- Page Header-->
+      <header class="page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-md-stick-up-offset="49px" data-lg-stick-up-offset="46px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true">
+            <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-top-panel">
+              <div class="rd-navbar-top-panel-inner">
+                <div class="rd-navbar-collapse">
+                  <ul class="list-spreader">
+                    <li>2130 Fulton Street Ibadan, NG</li>
+                    <li>Weekdays and Weekends: 8:00–19:30</li>
+                  </ul>
+                  <div class="rd-navbar-call">
+                    <div class="unit-link-with-icon unit unit-spacing-xs unit-horizontal">
+                      <div class="unit-left"><span class="icon icon-md-big icon-primary mdi-phone icon-gradient"></span></div>
+                      <div class="unit-body"><a href="tel:#">+234 8149 9601 90</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--RD Navbar Search-->
+                <div class="rd-navbar-search"><span class="rd-navbar-search-tooltip"> Search</span><a class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search" href="#"><span></span></a>
+                  <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                    <div class="form-wrap">
+                      <label class="form-label form-label" for="rd-navbar-search-form-input">Search....</label>
+                      <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
+                      <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                      <div class="rd-search-form-close fl-budicons-free-cross84"></div>
+                      <button class="rd-search-form-submit linearicons-magnifier"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-inner">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- RD Navbar Brand-->
+                {% comment %} <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="{% static 'images/urecover2.png' %}" alt="" width="151" height="46"/></a></div> {% endcomment %}
+                <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><h2>URECOVER</h2></a></div>
+              </div>
+              <div class="rd-navbar-aside-right">
+                <div class="rd-navbar-nav-wrap rd-navbar-nav-wrap-default">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="active"><a href="./">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a>
+                      <ul class="rd-navbar-dropdown">
+                        <li><a href="single-service.html">Single Service</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="timetable.html">Timetable</a></li>
+                    
+                    <li><a href="contacts.html">Contacts</a></li>
+                  </ul>
+                  <div class="rd-navbar-call">
+                    <div class="unit-link-with-icon unit unit-spacing-xs unit-horizontal">
+                      <div class="unit-left"><span class="icon icon-md-big icon-primary mdi-phone icon-gradient"></span></div>
+                      <div class="unit-body"><a href="tel:#">1-800-700-6200</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section class="swiper-main-wrap wow fadeIn">
+        <div class="swiper-container swiper-slider" data-index-bullet="true" data-clickable="true" data-custom-pagination="#swiper-pagination-index" data-slide-effect="fade" data-autoplay="5000" data-simulate-touch="false">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-slide-bg="{% static 'images/slide-03.jpg' %}">
+              <div class="swiper-slide-caption">
+                <div class="swiper-content-wrapper">
+                  <div class="swiper-content section-lg">
+                    <p class="heading-4 heading-divider-modern" data-caption-animate="fadeInUp" data-caption-delay="250" style="font-weight: 400">We provide high-quality mental counseling services</p>
+                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Mental Health Care</h1><a class="button button-gradient" href="contacts.html" data-caption-animate="fadeInUp" data-caption-delay="450">make an Appointment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'images/slide-03.jpg' %}">
+              <div class="swiper-slide-caption">
+                <div class="swiper-content-wrapper">
+                  <c>
+                    <p class="heading-4 heading-divider-modern" data-caption-animate="fadeInUp" data-caption-delay="250" style="font-weight: 400">Offering professional psychological help</p>
+                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Group Therapy</h1><a class="button button-gradient" href="contacts.html" data-caption-animate="fadeInUp" data-caption-delay="450">make an Appointment</a>
+                  </c>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="{% static 'images/slide-03.jpg' %}">
+              <div class="swiper-slide-caption">
+                <div class="swiper-content-wrapper">
+                  <div class="swiper-content">
+                    <p class="heading-4 heading-divider-modern" data-caption-animate="fadeInUp" data-caption-delay="250" style="font-weight: 400">Unique cognitive-behavioral approach</p>
+                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Quality Counseling</h1><a class="button button-gradient" href="contacts.html" data-caption-animate="fadeInUp" data-caption-delay="450">make an Appointment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-main-list-wrap">
+          <ul class="swiper-main-list">
+            <li><a class="icon fa-facebook icon-white-lighter-block" href="#"></a></li>
+            <li><a class="icon fa-twitter icon-white-lighter-block" href="#"></a></li>
+            <li><a class="icon icon-xxs fa-google-plus icon-white-lighter-block" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="swiper-pagination swiper-pagination-index" id="swiper-pagination-index"></div>
+      </section>
+      <!-- Opening Hours-->
+      <section class="section section-lg bg-white wow fadeIn">
+        <div class="shell">
+          <div class="range range-30">
+            <div class="cell-sm-5 cell-lg-3 reveal-sm-flex">
+              <div class="block-modern block-modern-1 wow fadeIn" data-wow-delay=".1s">
+                <div class="block-modern-title">
+                  <h4>Opening Hours</h4>
+                </div>
+                <div class="work-info">
+                  <div>
+                    <dl>
+                      <dt>Weekdays</dt>
+                      <dd>8.00 – 17.00</dd>
+                    </dl>
+                    <dl>
+                      <dt>Saturday</dt>
+                      <dd>9.30 – 17.30</dd>
+                    </dl>
+                    <dl>
+                      <dt>Sunday</dt>
+                      <dd>9.30 – 15.00</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell-sm-5 cell-lg-3 reveal-sm-flex">
+              <div class="block-modern block-modern-2 wow fadeIn" data-wow-delay=".3s">
+                <div class="block-modern-title">
+                  <h4>Doctors’ Timetable</h4>
+                </div>
+                <p>View a timetable showing when our doctors are usually available.</p><a class="button button-albus button-effect-ujarak" href="timetable.html"> View TimeTable</a>
+              </div>
+            </div>
+            <div class="cell-lg-4 reveal-md-flex">
+              <div class="block-modern block-modern-3 wow fadeIn" data-wow-delay=".5s">
+                <div class="block-modern-title">
+                  <h4>Make an Appointment</h4>
+                </div>
+                <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                  <div class="range range-xs-center range-20 range-narrow">
+                    <div class="cell-sm-5">
+                      <div class="form-wrap form-wrap-validation">
+                        <select class="form-input select-filter" data-style="modern" data-placeholder="Select Date" data-minimum-results-for-search="Infinity" data-constraints="@Required">
+                          <option label="placeholder"></option>
+                          <option value="2">May 1</option>
+                          <option value="3">June 25</option>
+                          <option value="4">July 17</option>
+                          <option value="5">August 29</option>
+                          <option value="6">September 3</option>
+                        </select><span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="cell-sm-5">
+                      <div class="form-wrap form-wrap-validation">
+                        <label class="form-label" for="forms-phone">Phone</label>
+                        <input class="form-input" id="forms-phone" type="text" name="phone" data-constraints="@Numeric @Required">
+                      </div>
+                    </div>
+                    <div class="cell-sm-5">
+                      <div class="form-wrap form-wrap-validation">
+                        <label class="form-label" for="forms-email">E-mail</label>
+                        <input class="form-input" id="forms-email" type="email" name="email" data-constraints="@Email @Required">
+                      </div>
+                    </div>
+                    <div class="cell-sm-5">
+                      <div class="form-button">
+                        <button class="button button-effect-ujarak button-albus button-block button-square" type="submit">make an Appointment</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Clinic-->
+      <section class="section section-lg bg-white wow fadeIn">
+        <div class="shell">
+          <div class="range range-md-middle range-30">
+            <div class="cell-md-6 wow fadeIn" data-wow-delay=".3s"><img src="images/about-02-803x458.jpg" alt="" width="803" height="458"/>
+            </div>
+            <div class="cell-md-4">
+              <h2 class="heading-with-aside-divider wow fadeInUp" data-wow-delay=".1s">About Our Clinic<span class="divider"></span></h2>
+              <p class="wow fadeInUp" data-wow-delay=".3s">Inside is a centrally located San Diego-based psychology practice providing therapeutic and counseling services. Our psychologists are highly trained and well-qualified to provide highly effective therapy.</p>
+              <div class="range range-40 range-lg-50 range-lg">
+                <div class="cell-xs-5">
+                  <div class="icon-unit wow fadeInUp" data-wow-delay=".7s">
+                    <div class="icon-unit-left"><img src="images/icon-01-22x39.png" alt="" width="22" height="39"/>
+                    </div>
+                    <div class="icon-unit-body">
+                      <h5>Qualified Doctors</h5>
+                      <p>25 years of experience</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell-xs-5">
+                  <div class="icon-unit wow fadeInUp" data-wow-delay=".75s">
+                    <div class="icon-unit-left"><img src="images/icon-02-38x39.png" alt="" width="38" height="39"/>
+                    </div>
+                    <div class="icon-unit-body">
+                      <h5>Individual Counseling</h5>
+                      <p>Professional psychotherapy</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell-xs-5">
+                  <div class="icon-unit wow fadeInUp" data-wow-delay=".8s">
+                    <div class="icon-unit-left"><img src="images/icon-03-38x41.png" alt="" width="38" height="41"/>
+                    </div>
+                    <div class="icon-unit-body">
+                      <h5>Couples Counseling</h5>
+                      <p>Mental help for families</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell-xs-5">
+                  <div class="icon-unit wow fadeInUp" data-wow-delay=".85s">
+                    <div class="icon-unit-left"><img src="images/icon-04-42x35.png" alt="" width="42" height="35"/>
+                    </div>
+                    <div class="icon-unit-body">
+                      <h5>Referring Therapists</h5>
+                      <p>Experts you can trust</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Departaments-->
+      <section class="section section-lg bg-white wow fadeIn">
+        <div class="shell">
+          <div class="range">
+            <div class="cell-xs-10">
+              <div class="box">
+                <div class="box-left">
+                  <h2>Departments</h2>
+                </div>
+                <div class="box-right">
+                  <div class="owl-outer-navigation" id="owl-carousel-nav">
+                    <div class="owl-arrow owl-arrow-prev fl-budicons-free-left161"></div>
+                    <div class="owl-arrow owl-arrow-next fl-budicons-free-right163"></div>
+                  </div><a class="button button-albus button-effect-ujarak" href="services.html"> All services</a>
+                </div>
+              </div>
+              <div class="divider-default"></div>
+              <div class="owl-carousel" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="5" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false" data-nav-custom="#owl-carousel-nav" data-autoplay="true">
+                <div class="item wow fadeInRight" data-wow-delay=".1s"><a class="block-accent" href="#">
+                    <div class="block-accent-inner"><span class="icon icon-xl icon-shaft linearicons-heart-pulse icon-gradient"></span>
+                      <h4 class="block-accent-title">Psychotherapy</h4>
+                    </div></a></div>
+                <div class="item wow fadeInRight" data-wow-delay=".3s"><a class="block-accent" href="#">
+                    <div class="block-accent-inner"><span class="icon icon-xl icon-shaft linearicons-man-woman icon-gradient"></span>
+                      <h4 class="block-accent-title">Couples Therapy</h4>
+                    </div></a></div>
+                <div class="item wow fadeInRight" data-wow-delay=".5s"><a class="block-accent" href="#">
+                    <div class="block-accent-inner"><span class="icon icon-xl icon-shaft linearicons-baby icon-gradient"></span>
+                      <h4 class="block-accent-title">Child Psychologist</h4>
+                    </div></a></div>
+                <div class="item wow fadeInRight" data-wow-delay=".7s"><a class="block-accent" href="#">
+                    <div class="block-accent-inner"><span class="icon icon-xl icon-shaft linearicons-group-work icon-gradient"></span>
+                      <h4 class="block-accent-title">Group Therapy</h4>
+                    </div></a></div>
+                <div class="item wow fadeInRight" data-wow-delay=".9s"><a class="block-accent" href="#">
+                    <div class="block-accent-inner"><span class="icon icon-xl icon-shaft linearicons-brain icon-gradient"></span>
+                      <h4 class="block-accent-title">Neuropsychology</h4>
+                    </div></a></div>
+                <div class="item"><a class="block-accent" href="#">
+                    <div class="block-accent-inner"><span class="icon icon-xl icon-shaft linearicons-bubble-video icon-gradient"></span>
+                      <h4 class="block-accent-title">Video Consultations</h4>
+                    </div></a></div>
+                <div class="item"><a class="block-accent" href="#">
+                    <div class="block-accent-inner"><span class="icon icon-xl icon-shaft linearicons-sun icon-gradient"></span>
+                      <h4 class="block-accent-title">Anti-Stress Therapy</h4>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Doctors-->
+      <section class="section section-lg bg-white wow fadeIn">
+        <div class="shell">
+          <div class="range">
+            <div class="cell-xs-10">
+              <div class="box">
+                <div class="box-left">
+                  <h2>Our Doctors</h2>
+                </div>
+                <div class="box-right"><a class="button button-albus button-effect-ujarak" href="our-doctors.html"> view all doctors</a></div>
+              </div>
+              <div class="divider-default"></div>
+              <div class="range range-30">
+                <div class="cell-sm-10 cell-lg-4 reveal-lg-flex">
+                  <div class="block-disclosure block-disclosure-xl wow fadeIn" data-wow-delay=".6s">
+                    <div class="block-disclosure-left"><img src="images/doctor-01-262x440.jpg" alt="" width="262" height="440"/>
+                    </div>
+                    <div class="block-disclosure-body">
+                      <p class="block-disclosure-cite">Founder, Senior Psychologist</p>
+                      <h5 class="block-disclosure-title"><a href="doctor-profile.html">Dr. Richard Molloy</a></h5>
+                      <p class="block-disclosure-info">20 years of experience</p>
+                      <div class="block-disclosure-divider"></div>
+                      <div class="block-disclosure-link"><span class="icon icon-md icon-primary mdi-phone icon-gradient"></span><a href="tel:#">+1 (409) 987–5874</a></div>
+                      <div class="block-disclosure-quote">
+                        <svg width="66px" height="47px">
+                          <defs>
+                            <filter>
+                              <feflood flood-color="rgb(202, 214, 227)" flood-opacity="1" result="floodOut"></feflood>
+                            </filter>
+                          </defs>
+                          <g>
+                            <path fill-rule="evenodd" d="M30.178,32.626 C30.178,36.717 28.692,40.139 25.720,42.891 C22.753,45.634 19.242,47.011 15.191,47.011 C11.146,47.011 7.601,45.634 4.558,42.891 C1.521,40.139 0.006,36.842 0.006,33.012 C0.006,29.171 1.829,24.504 5.472,19.002 L17.623,0.013 L29.371,0.013 L21.875,19.967 C27.410,22.392 30.178,26.616 30.178,32.626 ZM65.989,32.626 C65.989,36.717 64.503,40.139 61.531,42.891 C58.564,45.634 55.053,47.011 51.000,47.011 C46.951,47.011 43.407,45.634 40.369,42.891 C37.332,40.139 35.812,36.842 35.812,33.012 C35.812,29.171 37.641,24.504 41.281,19.002 L53.434,0.013 L65.174,0.013 L57.686,19.967 C63.218,22.392 65.989,26.616 65.989,32.626 Z"></path>
+                          </g>
+                        </svg>
+                        <p>I am a dedicated psychologist trained in individual and family psychotherapy as well as in other spheres of psychology.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell-sm-5 cell-lg-3">
+                  <div class="block-disclosure wow fadeIn" data-wow-delay=".1s">
+                    <div class="block-disclosure-left"><img src="images/doctor-02-151x203.jpg" alt="" width="151" height="203"/>
+                    </div>
+                    <div class="block-disclosure-body">
+                      <p class="block-disclosure-cite">Clinical Psychologist</p>
+                      <h5 class="block-disclosure-title"><a href="doctor-profile.html">Dr. Julia Jameson</a></h5>
+                      <p class="block-disclosure-info">9 years of experience</p>
+                      <div class="block-disclosure-divider"></div>
+                      <div class="block-disclosure-link"><span class="icon icon-md icon-primary mdi-phone icon-gradient"></span><a href="tel:#">+1 (409) 987–5874</a></div>
+                    </div>
+                  </div>
+                  <div class="block-disclosure wow fadeIn" data-wow-delay=".2s">
+                    <div class="block-disclosure-left"><img src="images/doctor-03-151x203.jpg" alt="" width="151" height="203"/>
+                    </div>
+                    <div class="block-disclosure-body">
+                      <p class="block-disclosure-cite">Counseling Psychologist</p>
+                      <h5 class="block-disclosure-title"><a href="doctor-profile.html">Dr. Rodney Stratton</a></h5>
+                      <p class="block-disclosure-info">16 years of experience</p>
+                      <div class="block-disclosure-divider"></div>
+                      <div class="block-disclosure-link"><span class="icon icon-md icon-primary mdi-phone icon-gradient"></span><a href="tel:#">+1 (409) 987–5874</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell-sm-5 cell-lg-3">
+                  <div class="block-disclosure wow fadeIn" data-wow-delay=".3s">
+                    <div class="block-disclosure-left"><img src="images/doctor-04-151x203.jpg" alt="" width="151" height="203"/>
+                    </div>
+                    <div class="block-disclosure-body">
+                      <p class="block-disclosure-cite">Counseling Psychologist</p>
+                      <h5 class="block-disclosure-title"><a href="doctor-profile.html">Dr. Max Turner</a></h5>
+                      <p class="block-disclosure-info">10 years of experience</p>
+                      <div class="block-disclosure-divider"></div>
+                      <div class="block-disclosure-link"><span class="icon icon-md icon-primary mdi-phone icon-gradient"></span><a href="tel:#">+1 (409) 987–5874</a></div>
+                    </div>
+                  </div>
+                  <div class="block-disclosure wow fadeIn" data-wow-delay=".4s">
+                    <div class="block-disclosure-left"><img src="images/doctor-05-151x203.jpg" alt="" width="151" height="203"/>
+                    </div>
+                    <div class="block-disclosure-body">
+                      <p class="block-disclosure-cite">Child Psychologist</p>
+                      <h5 class="block-disclosure-title"><a href="doctor-profile.html">Dr. Amy Adams</a></h5>
+                      <p class="block-disclosure-info">6 years of experience</p>
+                      <div class="block-disclosure-divider"></div>
+                      <div class="block-disclosure-link"><span class="icon icon-md icon-primary mdi-phone icon-gradient"></span><a href="tel:#">+1 (409) 987–5874</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Clinic-->
+      <section class="section section-lg bg-white wow fadeIn">
+        <div class="shell">
+          <div class="range range-md-middle range-30">
+            <div class="cell-md-6 wow fadeIn" data-wow-delay=".3s"><img src="images/about-01-803x458.jpg" alt="" width="803" height="458"/>
+            </div>
+            <div class="cell-md-4">
+              <h2 class="heading-with-aside-divider">Testimonials<span class="divider"></span></h2>
+              <div class="owl-carousel" data-items="1" data-stage-padding="0" data-loop="false" data-autoplay="true" data-margin="30" data-mouse-drag="false" data-animation-in="fadeIn" data-dots-custom="#owl-pagination-custom">
+                <div class="item">
+                  <div class="quote-testimonial">
+                    <p class="quote-testimonial-title">I went to this psychological clinic because of my shyness and social anxiety. My sessions were useful as I could talk about things that I couldn’t discuss with family, friends or almost anyone. Their assistance was of vital importance.</p>
+                    <p class="quote-testimonial-cite">Sam Adams</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="quote-testimonial">
+                    <p class="quote-testimonial-title">At first, I was a little hesitant to meet with a psychologist because of negative past experiences, but intelligence and compassion of your therapists made me trust them without hesitation. They did a great job and helped me a lot.</p>
+                    <p class="quote-testimonial-cite">Jane Anderson</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="quote-testimonial">
+                    <p class="quote-testimonial-title">Thank you! You helped me with my panic attacks and anxiety I had for a long time. Now I’m feeling alive again. I really appreciate what you have done! Without your support I may possibly have given up and maybe have lost my job.</p>
+                    <p class="quote-testimonial-cite">Tom Brown</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="quote-testimonial">
+                    <p class="quote-testimonial-title">We’ve had a lot of financial troubles over the years; loss of physical health, job and bankruptcy. Your coaching gave us hope and a new sense of vision so we can create our lives together. Thank you for everything you’ve done for us!</p>
+                    <p class="quote-testimonial-cite">Emily Watson</p>
+                  </div>
+                </div>
+              </div>
+              <div id="owl-pagination-custom">
+                <div class="owl-dot-custom wow fadeIn" data-wow-delay=".5s" data-owl-item="0"><img class="img-circle" src="images/testimonials-01-79x79.jpg" alt="" width="79" height="79"/>
+                </div>
+                <div class="owl-dot-custom wow fadeIn" data-wow-delay=".6s" data-owl-item="1"><img class="img-circle" src="images/testimonials-02-79x79.jpg" alt="" width="79" height="79"/>
+                </div>
+                <div class="owl-dot-custom wow fadeIn" data-wow-delay=".7s" data-owl-item="2"><img class="img-circle" src="images/testimonials-03-79x79.jpg" alt="" width="79" height="79"/>
+                </div>
+                <div class="owl-dot-custom wow fadeIn" data-wow-delay=".8s" data-owl-item="3"><img class="img-circle" src="images/testimonials-04-79x79.jpg" alt="" width="79" height="79"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest News-->
+      <section class="section section-lg bg-white wow fadeIn">
+        <div class="shell">
+          <div class="range">
+            <div class="cell-xs-10">
+              <div class="box">
+                <div class="box-left">
+                  <h2>Latest News</h2>
+                </div>
+                <div class="box-right">
+                  <div class="owl-outer-navigation" id="owl-carousel-nav-1">
+                    <div class="owl-arrow owl-arrow-prev fl-budicons-free-left161"></div>
+                    <div class="owl-arrow owl-arrow-next fl-budicons-free-right163"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider-default"></div>
+              <div class="owl-carousel" data-items="1" data-md-items="2" data-stage-padding="0" data-loop="true" data-autoplay="true" data-margin="30" data-mouse-drag="false" data-nav-custom="#owl-carousel-nav-1">
+                <div class="item wow fadeIn" data-wow-delay=".1s">
+                  <article class="post">
+                    <div class="post-header"><a href="news-page.html"><img src="images/news-01-719x246.jpg" alt="" width="719" height="246"/></a></div>
+                    <div class="post-footer">
+                      <h4><a href="news-page.html">Finding a Great Therapist for Your Child</a></h4>
+                      <div class="post-meta">
+                        <dl>
+                          <dt>Date</dt>
+                          <dd><a href="news-page.html">
+                              <time datetime="2018-01-22">January 22, 2018</time></a></dd>
+                        </dl>
+                        <dl>
+                          <dt>Posted by</dt>
+                          <dd><a href="news-page.html">Amelia Condon</a></dd>
+                        </dl>
+                        <dl>
+                          <dt>Comments</dt>
+                          <dd><a href="news-page.html">2</a></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="item wow fadeIn" data-wow-delay=".2s">
+                  <article class="post">
+                    <div class="post-header"><a href="news-page.html"><img src="images/news-02-719x246.jpg" alt="" width="719" height="246"/></a></div>
+                    <div class="post-footer">
+                      <h4><a href="news-page.html">Treating Emotional Issues Correctly</a></h4>
+                      <div class="post-meta">
+                        <dl>
+                          <dt>Date</dt>
+                          <dd><a href="news-page.html">
+                              <time datetime="2018-01-22">January 22, 2018</time></a></dd>
+                        </dl>
+                        <dl>
+                          <dt>Posted by</dt>
+                          <dd><a href="news-page.html">Amelia Condon</a></dd>
+                        </dl>
+                        <dl>
+                          <dt>Comments</dt>
+                          <dd><a href="news-page.html">2</a></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="post">
+                    <div class="post-header"><a href="news-page.html"><img src="images/news-03-719x246.jpg" alt="" width="719" height="246"/></a></div>
+                    <div class="post-footer">
+                      <h4><a href="news-page.html">Individual Treatment and Assistance</a></h4>
+                      <div class="post-meta">
+                        <dl>
+                          <dt>Date</dt>
+                          <dd><a href="news-page.html">
+                              <time datetime="2018-01-22">January 22, 2018</time></a></dd>
+                        </dl>
+                        <dl>
+                          <dt>Posted by</dt>
+                          <dd><a href="news-page.html">Amelia Condon</a></dd>
+                        </dl>
+                        <dl>
+                          <dt>Comments</dt>
+                          <dd><a href="news-page.html">2</a></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="post">
+                    <div class="post-header"><a href="news-page.html"><img src="images/news-04-719x246.jpg" alt="" width="719" height="246"/></a></div>
+                    <div class="post-footer">
+                      <h4><a href="news-page.html">Anxiety: Theory and Practice</a></h4>
+                      <div class="post-meta">
+                        <dl>
+                          <dt>Date</dt>
+                          <dd><a href="news-page.html">
+                              <time datetime="2018-01-22">January 22, 2018</time></a></dd>
+                        </dl>
+                        <dl>
+                          <dt>Posted by</dt>
+                          <dd><a href="news-page.html">Amelia Condon</a></dd>
+                        </dl>
+                        <dl>
+                          <dt>Comments</dt>
+                          <dd><a href="news-page.html">2</a></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <section class="section section-sm bg-white-lighter">
+        <div class="shell shell-out">
+          <div class="range range-30">
+            <div class="cell-sm-3 cell-xs-5">
+              <div class="preffix-xl-70" style="max-width: 274px">
+                <h6 class="text-spacing-200 text-uppercase font-base">Contact us</h6>
+                <div class="divider-modern"></div>
+                <ul class="list list-md">
+                  <li>
+                    <div class="unit unit-spacing-xs unit-horizontal unit-custom">
+                      <div class="unit-left"><span class="icon icon-md icon-primary mdi-phone icon-gradient"></span></div>
+                      <div class="unit-body"><a class="link-gray-darker" href="tel:#">+1 (409) 987–5874</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs unit-horizontal unit-custom">
+                      <div class="unit-left"><span class="icon icon-md icon-primary mdi-email-outline icon-gradient"></span></div>
+                      <div class="unit-body" style="position: relative; top: 1px"><a class="link-gray-darker" href="mailto:#">info@demolink.org</a></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cell-sm-3 cell-xs-5">
+              <div class="preffix-xl-70" style="max-width: 274px">
+                <h6 class="text-spacing-200 text-uppercase font-base">clinic address</h6>
+                <div class="divider-modern"></div>
+                <ul class="list list-md">
+                  <li>
+                    <div class="unit unit-spacing-xs unit-horizontal">
+                      <div class="unit-left"><span class="icon icon-md-biger icon-primary mdi-map-marker icon-gradient"></span></div>
+                      <div class="unit-body" style="position: relative; top: -4px;"><a class="link-default" href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cell-sm-4">
+              <div class="preffix-xl-70" style="max-width: 433px">
+                <h6 class="text-spacing-200 text-uppercase font-base">Our departments</h6>
+                <div class="divider-modern"></div>
+                <ul class="list-inline list-inline-lg">
+                  <li>
+                    <ul class="list list-marked list-marked-sm list-marked-primary" style="line-height: 1.2">
+                      <li><a class="link-default" href="about.html">About Us</a></li>
+                      <li><a class="link-default" href="services.html">Our Services</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="list list-marked list-marked-sm list-marked-primary" style="line-height: 1.2">
+                      <li><a class="link-default" href="our-doctors.html">Our Doctors</a></li>
+                      <li><a class="link-default" href="timetable.html">Timetable</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="list list-marked list-marked-sm list-marked-primary" style="line-height: 1.2">
+                      <li><a class="link-default" href="#">Testimonials</a></li>
+                      <li><a class="link-default" href="#">Blog</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="page-footer section text-center">
+        <div class="shell shell-out">
+          <div class="range range-xs-reverse range-10">
+            <div class="cell-xs-4 cell-sm-4 text-xs-right">
+              <div class="preffix-xl-70" style="max-width: 433px">
+                <ul class="list-inline">
+                  <li><a class="icon icon-gray-darker fa-facebook" href="#"></a></li>
+                  <li><a class="icon icon-gray-darker fa-twitter" href="#"></a></li>
+                  <li><a class="icon icon-gray-darker fa-google-plus" href="#"></a></li>
+                  <li><a class="icon icon-gray-darker fa-pinterest-p" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cell-xs-6 cell-sm-6 text-xs-left">
+              <p class="copyright preffix-xl-70">Inside	&#169; <span class="copyright-year"></span>. <a href="privacy-policy.html">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="{% static 'js/core.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+	
+	<!--LIVEDEMO_00 -->
+
+	<script type="text/javascript">
+	 var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-7078796-5']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();</script>
+	
+  <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body>
+</html>
